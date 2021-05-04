@@ -1,0 +1,20 @@
+h1 {
+	/* font-size: 16px; */
+	font-size: 1rem;
+}
+
+
+
+html {
+	/* font-size: 16px; */
+	font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+
+	html {
+		font-size: 20px;
+	}
+
+}
+
