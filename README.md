@@ -22,5 +22,5 @@ By Yariv Katz
 
 ## Video lectures
 
-1. 
+1. https://johnbryce.zoom.us/rec/share/ZdFTo7XAK8FXRcFVieW2ejOOUDEUwI7F_VFDe7xE7cadjewrwvqiRdl1FNdrN8Qj.LyocDNII8qp2V2Mj
 
