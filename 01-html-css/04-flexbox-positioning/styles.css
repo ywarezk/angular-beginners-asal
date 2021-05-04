@@ -1,0 +1,39 @@
+
+
+.flexbox-container {
+	height: 100px;
+	background-color: orange;
+	/* display: flex;
+	justify-content: space-between;
+	align-items: center; */
+	/* padding-left: 16px;
+	padding-right: 16px; */
+	/* width: 100%; */
+}
+
+.flex-item {
+	height: 60px;
+	background-color: red;
+	/* border: 1px solid black; */
+	width: 100px;
+}
+
+.login {
+	height: 200px;
+	width: 200px;
+	background-color: green;
+}
+
+.footer {
+	height: 100px;
+	background-color: aqua;
+	width: 100%;
+}
+
+.page-layout {
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: space-between; */
+	/* height: 100vh; */
+	/* align-items: center; */
+}
