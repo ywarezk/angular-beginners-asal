@@ -19,6 +19,8 @@ So we have to learn typescript before diving in on angular
 > tsc --init
 ```
 
+- In the `tsconfig.json` set the `sourceMaps` to `true`
+
 - create two typescript files `main.ts`, `hello.ts`
 - `hello.ts` should export a function which prints hello world to the console
 - `main.ts` should import the function from `hello.ts` and call that function
