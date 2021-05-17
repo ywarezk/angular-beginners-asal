@@ -3,6 +3,16 @@
 Angular was built using typescript.  
 So we have to learn typescript before diving in on angular
 
+## Lesson Plan
+
+- installing typescript
+- running with the debugger
+- declaring variables
+- functions
+- oop
+- decorators
+- modules
+
 ## EX.
 
 - create an empty directory
