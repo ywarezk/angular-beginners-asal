@@ -13,7 +13,25 @@ To start a new angular project
 > npx @angular/cli new <project name>
 ```
 
+## Run a development server
 
+```
+> npx ng serve
+```
+
+## Components
+
+these are the main building block of out angular app.  
+UI blocks that angular will take and draw part of our ui from our components.  
+Angular will also keep them updated
+
+## component tree
+
+                  app-root
+                  
+    <footer>           <login>           <app-header>
+    
+                                              <app-nav>
 
 ## Lesson Plan
 
