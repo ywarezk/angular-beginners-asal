@@ -25,6 +25,13 @@ these are the main building block of out angular app.
 UI blocks that angular will take and draw part of our ui from our components.  
 Angular will also keep them updated
 
+## create a new component
+
+```
+> cd src/app
+> npx ng generate component Header
+```
+
 ## component tree
 
                   app-root
