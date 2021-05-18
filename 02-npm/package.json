@@ -1,0 +1,22 @@
+{
+  "name": "02-npm",
+  "version": "1.0.0",
+  "description": "Node Package Manager We use this tool to install packages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/core": "^12.0.0",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "jasmine": "^3.7.0",
+    "sass": "^1.32.13",
+    "typescript": "^4.2.4",
+    "webpack": "^5.37.0"
+  }
+}
