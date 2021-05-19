@@ -24,3 +24,5 @@ By Yariv Katz
 
 1. https://johnbryce.zoom.us/rec/share/ZdFTo7XAK8FXRcFVieW2ejOOUDEUwI7F_VFDe7xE7cadjewrwvqiRdl1FNdrN8Qj.LyocDNII8qp2V2Mj
 
+2. https://johnbryce.zoom.us/rec/share/lQGwdR_1gyod989lPvuSpg3Q8FuWrjAJ6gidTcQr8Q60KeC4iMsG8HicpfXrE5PH.FxLH5AltL0-b_C-R
+
