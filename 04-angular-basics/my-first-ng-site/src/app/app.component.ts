@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from 'src/settings/user.service';
 
 // component
 // ui block in our screen
@@ -15,5 +16,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(private _userService: UserService) {}
+
   title = 'my-first-ng-site';
 }

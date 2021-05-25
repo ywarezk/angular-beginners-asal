@@ -1,1 +1,16 @@
-<p>header works!</p>
+<p> {{ counter }} </p>
+<p>
+  {{ sayHello() + 'yariv' }}
+</p>
+<p class="{{ calculateClass() }}">
+  the css class is changin every second
+</p>
+
+<p [innerText]="calculateClass()">
+</p>
+
+<button (click)="clickedButton($event)">
+  click me
+</button>
+
+<input (input)="userTypedText($event)" type="text" />
