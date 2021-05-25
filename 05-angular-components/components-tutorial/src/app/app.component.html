@@ -1,0 +1,9 @@
+<h1>
+  Talking about angular components
+</h1>
+
+<app-child personName="Yariv" [age]="42" (hello)="logHello($event)" ></app-child>
+
+<app-child [personName]="calculateName()"></app-child>
+
+<app-child [personName]="'hello' + 'foo'"></app-child>
