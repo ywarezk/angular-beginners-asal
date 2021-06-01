@@ -1,5 +1,5 @@
-<h1>
-  Talking about angular components
+<h1 id="hello" >
+  Talking about angular components {{ commService.message2 | async }}
 </h1>
 
 <app-child personName="Yariv" [age]="42" (hello)="logHello($event)" ></app-child>
@@ -7,3 +7,11 @@
 <app-child [personName]="calculateName()"></app-child>
 
 <app-child [personName]="'hello' + 'foo'"></app-child>
+
+
+<app-lifecycle [age]="42" *ngIf="someCondition"></app-lifecycle>
+
+
+<app-common-directives></app-common-directives>
+
+<!-- <app-name></app-name> -->
