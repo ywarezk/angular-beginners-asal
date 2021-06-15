@@ -1,0 +1,27 @@
+
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/">Home</a>
+    </li>
+    <li>
+      <a routerLink="/about/yariv" [queryParams]="{hello: 'world'}">About</a>
+    </li>
+
+    <li>
+      <a routerLink="/settings" >Settings</a>
+    </li>
+
+    <li>
+      <a routerLink="/auth/login">Login</a>
+    </li>
+
+    <li>
+      <a routerLink="/todo">todo</a>
+    </li>
+
+  </ul>
+</nav>
+
+<router-outlet>
+</router-outlet>

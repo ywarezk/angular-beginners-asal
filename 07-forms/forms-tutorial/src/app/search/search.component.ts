@@ -1,14 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { mergeMap, debounceTime, distinctUntilChanged } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+
+
+/**
+ *
+
+ ---o-----o-----o-----o-------->
+
+ */
 
 @Component({
   selector: 'app-search',
   template: `
-    <form>
-      <input type="search" placeholder="search for todo" />
+    <form [formGroup]="searchForm">
+      <input
+	  	  formControlName="search"
+	  	  type="search"
+		placeholder="search for todo"
+	/>
     </form>
     <ul>
-      <li>
+      <li *ngFor="let item of (todoList$ | async)">
+        {{ item.title }}
       </li>
     </ul>
   `,
@@ -16,16 +32,40 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SearchComponent implements OnInit {
 
-  constructor(private _http: HttpClient) { }
+  /*
+  FormControl
+  FormArray
+  FormGroup
+  */
+  searchForm: FormGroup = this._formBuilder.group({
+    search: ''
+  });
 
-  ngOnInit(): void {
-    this.sendSearchRequest().subscribe((tasks) => {
+  todoList$: Observable<any>;
 
-    });
+  constructor(private _http: HttpClient, private _formBuilder: FormBuilder) { }
+
+  ngOnInit() {
+    const searchFormControl = this.searchForm.get('search');
+
+    // ----S-----S-----S----S-------S---S---S---S-->
+    // --------------------------S----------------------->
+    //---------------------------S---S---S---S---S>
+    // --------------------------R--->
+    // -----------------------------------TodoList------>
+    this.todoList$ = searchFormControl?.valueChanges.pipe(
+      debounceTime(1000),
+      distinctUntilChanged(),
+      mergeMap(searchString => this._http.get(`https://nztodo.herokuapp.com/api/tasks/?format=json&search=${searchString}`))
+    );
+
+    /*
+    .subscribe()
+    */
+
+
   }
 
-  sendSearchRequest(search = '') {
-    return this._http.get(`http://nztodo.herokuapp.com/api/tasks/?format=json&search=${search}`);
-  }
+
 
 }
